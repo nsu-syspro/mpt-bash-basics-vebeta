@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+archive="$1"
+target="${archive}.unpacked"
+
+mkdir -p "$target"
+tar -xf "$archive" -C "$target"

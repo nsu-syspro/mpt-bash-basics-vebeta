@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+suffix="$1"
+shift
+
+for f in "$@"; do
+    mv -- "$f" "${f}${suffix}"
+done
